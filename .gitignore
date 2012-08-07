@@ -1,0 +1,14 @@
+*.py[co]
+*.db
+*.sql
+*.gz
+*.zip
+*.tar
+*.log
+*.swp
+.DS_Store
+.project
+.pydevproject
+docs/_build
+fabfiles
+ber_watch/media
