@@ -123,6 +123,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'django.contrib.admin',
     'south',
+    'documents',
     'big_projects_watch',
 )
 
