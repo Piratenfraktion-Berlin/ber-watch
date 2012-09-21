@@ -1,5 +1,6 @@
 # Django settings for ber_watch project.
 import os
+from ber_watch.sec_settings import *
 
 
 DEBUG = True
@@ -13,6 +14,7 @@ MANAGERS = ADMINS
 
 PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
 
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
@@ -23,6 +25,8 @@ DATABASES = {
         'PORT': '',                      # Set to empty string for default. Not used with sqlite3.
     }
 }
+
+AUTH_PROFILE_MODULE = 'big_projects_watch.UserProfile'
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
@@ -83,9 +87,6 @@ STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
 #    'django.contrib.staticfiles.finders.DefaultStorageFinder',
 )
-
-# Make this unique, and don't share it with anybody.
-SECRET_KEY = '2a#y=@y6*=+=9xy%615hcs4#)x(1c$42kh*d(9aw951)s3&amp;n%r'
 
 # List of callables that know how to import templates from various sources.
 TEMPLATE_LOADERS = (
