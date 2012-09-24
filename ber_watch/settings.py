@@ -14,6 +14,7 @@ MANAGERS = ADMINS
 
 PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
 
+WITH_PUBLIC_DOCS = True
 
 DATABASES = {
     'default': {
@@ -125,7 +126,6 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'django.contrib.admin',
     'south',
-    'documents',
     'big_projects_watch',
 )
 
