@@ -13,4 +13,4 @@ docs/_build
 config-scripts
 fabfiles
 ber_watch/media
-ber_watch/sec_settings.py
+ber_watch/*_settings.py
