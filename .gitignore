@@ -12,6 +12,7 @@
 docs/_build
 config-scripts
 fabfiles
+fabfile.py
 ber_watch/media
 ber_watch/urls.py
 ber_watch/*_settings.py
