@@ -9,7 +9,7 @@
 .DS_Store
 .project
 .pydevproject
-docs/_build
+docs
 config-scripts
 fabfiles
 fabfile.py

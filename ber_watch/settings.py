@@ -114,8 +114,24 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'django.contrib.admin',
     'south',
+    'kombu.transport.django',
+    'djcelery',
+    'djcelery_email',
     'big_projects_watch',
 )
+
+EMAIL_BACKEND = 'djcelery_email.backends.CeleryEmailBackend'
+
+import djcelery
+djcelery.setup_loader()
+
+BROKER_HOST = "localhost"
+BROKER_PORT = 5672
+BROKER_BACKEND = "django"
+BROKER_USER = "guest"
+BROKER_PASSWORD = "guest"
+BROKER_VHOST = "/"
+CELERYBEAT_SCHEDULER = 'djcelery.schedulers.DatabaseScheduler'
 
 # A sample logging configuration. The only tangible logging
 # performed by this configuration is to send an email to
