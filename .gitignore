@@ -13,6 +13,8 @@ docs
 config-scripts
 fabfiles
 fabfile.py
+static/
+.htpasswd
 ber_watch/media
 ber_watch/urls.py
 ber_watch/*_settings.py

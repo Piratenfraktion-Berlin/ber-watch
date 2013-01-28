@@ -120,8 +120,6 @@ INSTALLED_APPS = (
     'big_projects_watch',
 )
 
-EMAIL_BACKEND = 'djcelery_email.backends.CeleryEmailBackend'
-
 import djcelery
 djcelery.setup_loader()
 
