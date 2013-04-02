@@ -2,7 +2,7 @@
 from ber_watch.current_settings import *
 
 
-WITH_PUBLIC_DOCS = True
+BPW_IE_COMPATIBLE_PDF_VIEWER = True
 
 
 AUTH_PROFILE_MODULE = 'big_projects_watch.UserProfile'
