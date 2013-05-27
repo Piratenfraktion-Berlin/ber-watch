@@ -3,7 +3,7 @@ ber-watch
 =========
 
 System to organize information around the BER airport project to support the work of the investigation committee
-in the Berlin parliament (Abgeordnetenhaus) and to help the interested public to stay informed.
+in the Berlin parliament (Abgeordnetenhaus) and to help the interested public to stay informed. 
 
 Features
 --------
