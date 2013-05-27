@@ -1,9 +1,8 @@
 # Django settings for ber_watch project.
 from ber_watch.current_settings import *
 
-
-BPW_IE_COMPATIBLE_PDF_VIEWER = True
-BPW_PUBLIC_API = True
+DPP_IE_COMPATIBLE_PDF_VIEWER = True
+DPP_PUBLIC_API = True
 
 
 # Hosts/domain names that are valid for this site; required if DEBUG is False
@@ -121,7 +120,7 @@ INSTALLED_APPS = (
     'kombu.transport.django',
     'djcelery',
     'djcelery_email',
-    'big_projects_watch',
+    'public_project',
 )
 
 import djcelery
