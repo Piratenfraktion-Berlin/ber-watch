@@ -9,10 +9,6 @@
 .DS_Store
 .project
 .pydevproject
-docs
-config-scripts
-fabfiles
-fabfile.py
 static/
 .htpasswd
 ber_watch/media
