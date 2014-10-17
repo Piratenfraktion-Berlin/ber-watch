@@ -1,4 +1,5 @@
 # Django settings for ber_watch project.
+from django.conf import global_settings
 from ber_watch.current_settings import *
 
 DPP_IE_COMPATIBLE_PDF_VIEWER = True
@@ -90,15 +91,9 @@ TEMPLATE_DIRS = (
     # Don't forget to use absolute paths, not relative paths.
 )
 
-TEMPLATE_CONTEXT_PROCESSORS = (
-    "django.contrib.auth.context_processors.auth",
-    "django.core.context_processors.debug",
-    "django.core.context_processors.i18n",
-    "django.core.context_processors.media",
-    "django.core.context_processors.static",
-    "django.core.context_processors.tz",
-    "django.contrib.messages.context_processors.messages",
+TEMPLATE_CONTEXT_PROCESSORS = global_settings.TEMPLATE_CONTEXT_PROCESSORS + (
     "django.core.context_processors.request",
+    "public_project.context_processors.uploaded_images_list",
 )
 
 
@@ -109,13 +104,13 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'public_project',
     'django.contrib.admin',
     'south',
     'tastypie',
     'kombu.transport.django',
     'djcelery',
     'djcelery_email',
-    'public_project',
 )
 
 import djcelery
